@@ -122,7 +122,6 @@ public class GildedRoseTest {
 		assertSellInAndQuality(1, 80);
 	}
 	
-	@Ignore
 	@Test
 	public void conjuredItemQualityDecreases() {
 		stock(CONJURED_ITEM, 1, 10);
@@ -132,7 +131,6 @@ public class GildedRoseTest {
 		assertSellInAndQuality("after sell-in", -1, 8 - 4);
 	}
 
-	@Ignore
 	@Test
 	public void conjuredItemQualityIsNeverLessThanZero() {
 		stock(CONJURED_ITEM, 1, 0);
@@ -140,7 +138,6 @@ public class GildedRoseTest {
 		assertSellInAndQuality("zero minus two", 0, 0);
 	}
 
-	@Ignore
 	@Test
 	public void conjuredItemQualityOfOneMinusTwoIsJustZero() {
 		stock(CONJURED_ITEM, 1, 1);
@@ -148,7 +145,6 @@ public class GildedRoseTest {
 		assertSellInAndQuality("one minus two", 0, 0);
 	}
 	
-	@Ignore
 	@Test
 	public void conjuredItemQualityOfZeroMinusFourIsStillZero() {
 		stock(CONJURED_ITEM, -1, 0);
@@ -156,7 +152,6 @@ public class GildedRoseTest {
 		assertSellInAndQuality("zero minus four", -2, 0);
 	}
 	
-	@Ignore
 	@Test
 	public void conjuredItemQualityOfOneMinusFourIsJustZero() {
 		stock(CONJURED_ITEM, -1, 1);
@@ -164,7 +159,6 @@ public class GildedRoseTest {
 		assertSellInAndQuality("one minus four", -2, 0);
 	}
 	
-	@Ignore
 	@Test
 	public void conjuredItemQualityOfTwoMinusFourIsJustZero() {
 		stock(CONJURED_ITEM, -1, 2);
@@ -172,7 +166,6 @@ public class GildedRoseTest {
 		assertSellInAndQuality("two minus four", -2, 0);
 	}
 	
-	@Ignore
 	@Test
 	public void conjuredItemQualityOfThreeMinusFourIsJustZero() {
 		stock(CONJURED_ITEM, -1, 3);
